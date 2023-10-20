@@ -1,0 +1,20 @@
+<article class="post">
+  
+  <div class="post-wrap">
+
+  <div class="p-1">
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title"><a href="/post/{{id}}">{{title}}</a></h5>
+    <h6 class="card-subtitle mb-2 text-muted">Post by - {{user.username}}</h6>
+    <p class="post-date">Date: {{format_date created_at}}</p>
+    <p class="card-text post-des">{{substring post_content}}</p>
+    <p class="card-text">{{comments.length}} {{format_plural "comment" comments.length}}</p>
+    <a href="/post/{{id}}" class="card-link">Read More</a>
+    
+  </div>
+</div>
+  </div>
+
+  </div>
+</article>
